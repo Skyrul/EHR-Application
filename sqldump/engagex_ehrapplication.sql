@@ -1,0 +1,101 @@
+-- Adminer 4.3.1 MySQL dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+CREATE DATABASE `engagex_ehrapplication` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `engagex_ehrapplication`;
+
+DROP TABLE IF EXISTS `tbl_applicant`;
+CREATE TABLE `tbl_applicant` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `last_name` varchar(244) NOT NULL,
+  `first_name` varchar(244) NOT NULL,
+  `mid_initial` varchar(1) NOT NULL,
+  `created_date` datetime NOT NULL,
+  `email` varchar(244) NOT NULL,
+  `home_phone` varchar(154) NOT NULL,
+  `cell_phone` varchar(154) NOT NULL,
+  `is_usa_eligible` varchar(6) NOT NULL,
+  `position_applying_for` varchar(244) NOT NULL,
+  `date_can_start` date NOT NULL,
+  `preferred_employ_status` varchar(154) NOT NULL,
+  `special_sched_request` date NOT NULL,
+  `hs_attended` varchar(244) NOT NULL,
+  `hs_city_state` varchar(254) NOT NULL,
+  `hs_is_graduated` varchar(6) NOT NULL,
+  `college_attended` varchar(244) NOT NULL,
+  `college_city_state` varchar(254) NOT NULL,
+  `college_major` varchar(244) NOT NULL,
+  `education_status` varchar(154) NOT NULL,
+  `list_of_accomplishment` varchar(300) NOT NULL,
+  `how_do_hear_engagex` varchar(254) NOT NULL,
+  `from_sun` varchar(24) NOT NULL,
+  `from_mon` varchar(24) NOT NULL,
+  `from_tue` varchar(24) NOT NULL,
+  `from_wed` varchar(24) NOT NULL,
+  `from_thu` varchar(24) NOT NULL,
+  `from_fri` varchar(24) NOT NULL,
+  `from_sat` varchar(24) NOT NULL,
+  `to_sun` varchar(24) NOT NULL,
+  `to_mon` varchar(24) NOT NULL,
+  `to_tue` varchar(24) NOT NULL,
+  `to_wed` varchar(24) NOT NULL,
+  `to_thu` varchar(24) NOT NULL,
+  `to_fri` varchar(24) NOT NULL,
+  `to_sat` varchar(24) NOT NULL,
+  `employer1` varchar(244) NOT NULL,
+  `job_title1` varchar(244) NOT NULL,
+  `street_address1` varchar(254) NOT NULL,
+  `city_state_zip1` varchar(254) NOT NULL,
+  `emp_from_date1` date NOT NULL,
+  `emp_to_date1` date NOT NULL,
+  `phone1` varchar(154) NOT NULL,
+  `reason1` varchar(154) NOT NULL,
+  `starting_pay_amount1` double NOT NULL,
+  `starting_pay_per1` varchar(10) NOT NULL,
+  `ending_pay_amount1` double NOT NULL,
+  `ending_pay_per1` varchar(10) NOT NULL,
+  `employer2` varchar(244) NOT NULL,
+  `job_title2` varchar(244) NOT NULL,
+  `street_address2` varchar(254) NOT NULL,
+  `city_state_zip2` varchar(254) NOT NULL,
+  `emp_from_date2` date NOT NULL,
+  `emp_to_date2` date NOT NULL,
+  `phone2` varchar(154) NOT NULL,
+  `reason2` varchar(154) NOT NULL,
+  `starting_pay_amount2` double NOT NULL,
+  `starting_pay_per2` varchar(10) NOT NULL,
+  `ending_pay_amount2` double NOT NULL,
+  `ending_pay_per2` varchar(10) NOT NULL,
+  `employer3` varchar(244) NOT NULL,
+  `job_title3` varchar(244) NOT NULL,
+  `street_address3` varchar(254) NOT NULL,
+  `city_state_zip3` varchar(254) NOT NULL,
+  `emp_from_date3` date NOT NULL,
+  `emp_to_date3` date NOT NULL,
+  `phone3` varchar(154) NOT NULL,
+  `reason3` varchar(154) NOT NULL,
+  `starting_pay_amount3` double NOT NULL,
+  `starting_pay_per3` varchar(10) NOT NULL,
+  `ending_pay_amount3` double NOT NULL,
+  `ending_pay_per3` varchar(10) NOT NULL,
+  `applicant_signature` varchar(154) NOT NULL,
+  `applicant_signature_date` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `tbl_applicant` (`id`, `last_name`, `first_name`, `mid_initial`, `created_date`, `email`, `home_phone`, `cell_phone`, `is_usa_eligible`, `position_applying_for`, `date_can_start`, `preferred_employ_status`, `special_sched_request`, `hs_attended`, `hs_city_state`, `hs_is_graduated`, `college_attended`, `college_city_state`, `college_major`, `education_status`, `list_of_accomplishment`, `how_do_hear_engagex`, `from_sun`, `from_mon`, `from_tue`, `from_wed`, `from_thu`, `from_fri`, `from_sat`, `to_sun`, `to_mon`, `to_tue`, `to_wed`, `to_thu`, `to_fri`, `to_sat`, `employer1`, `job_title1`, `street_address1`, `city_state_zip1`, `emp_from_date1`, `emp_to_date1`, `phone1`, `reason1`, `starting_pay_amount1`, `starting_pay_per1`, `ending_pay_amount1`, `ending_pay_per1`, `employer2`, `job_title2`, `street_address2`, `city_state_zip2`, `emp_from_date2`, `emp_to_date2`, `phone2`, `reason2`, `starting_pay_amount2`, `starting_pay_per2`, `ending_pay_amount2`, `ending_pay_per2`, `employer3`, `job_title3`, `street_address3`, `city_state_zip3`, `emp_from_date3`, `emp_to_date3`, `phone3`, `reason3`, `starting_pay_amount3`, `starting_pay_per3`, `ending_pay_amount3`, `ending_pay_per3`, `applicant_signature`, `applicant_signature_date`) VALUES
+(1,	'Barola',	'Joven',	'',	'2017-11-04 00:24:47',	'jovenbarola@gmail.com',	'867886787',	'68767868',	'Yes',	'6686876876',	'0000-00-00',	'Full Time',	'0000-00-00',	'999999',	'999999',	'GED',	'999999',	'999999',	'999999',	'Graduated',	'999999',	'999999',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'999999',	'999999',	'999999',	'999999',	'0000-00-00',	'0000-00-00',	'999999',	'999999',	999999,	'999999',	999999,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'999999',	'999999',	'999999',	'999999',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'0000-00-00'),
+(2,	'324324',	'34324',	'2',	'2017-11-04 00:34:54',	'324324324@gmail.com',	'',	'',	'No',	'2232322',	'0000-00-00',	'Full Time',	'0000-00-00',	'32432',	'234324',	'Yes',	'324234',	'',	'',	'Enrolled',	'324324',	'324324',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'0000-00-00'),
+(3,	'324324',	'34324',	'2',	'2017-11-04 00:37:52',	'324324324@gmail.com',	'',	'',	'No',	'2232322',	'0000-00-00',	'Full Time',	'0000-00-00',	'32432',	'234324',	'Yes',	'324234',	'',	'',	'Enrolled',	'324324',	'324324',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	567657,	'676ghjg',	657657,	'75676hgjhg',	'',	'0000-00-00'),
+(4,	'324324',	'34324',	'2',	'2017-11-04 00:42:21',	'324324324@gmail.com',	'',	'',	'No',	'2232322',	'0000-00-00',	'Full Time',	'0000-00-00',	'32432',	'234324',	'Yes',	'324234',	'',	'',	'Enrolled',	'324324',	'324324',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	567657,	'676ghjg',	657657,	'75676hgjhg',	'',	'0000-00-00'),
+(5,	'435435',	'345345435',	'3',	'2017-11-04 01:04:35',	'435435@gmail.com',	'34534543',	'345345345',	'Yes',	'43535435',	'0000-00-00',	'Full Time',	'0000-00-00',	'43535',	'435435',	'Yes',	'435435',	'435435',	'435435',	'Enrolled',	'435345',	'435345',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'0000-00-00'),
+(6,	'435435',	'345345435',	'3',	'2017-11-04 01:05:52',	'435435@gmail.com',	'34534543',	'345345345',	'Yes',	'43535435',	'0000-00-00',	'Full Time',	'0000-00-00',	'43535',	'435435',	'Yes',	'435435',	'435435',	'435435',	'Enrolled',	'435345',	'435345',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'0000-00-00'),
+(7,	'435435',	'345345435',	'3',	'2017-11-04 01:06:35',	'435435@gmail.com',	'34534543',	'345345345',	'Yes',	'43535435',	'0000-00-00',	'Full Time',	'0000-00-00',	'43535',	'435435',	'Yes',	'435435',	'435435',	'435435',	'Enrolled',	'435345',	'435345',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'0000-00-00'),
+(8,	'Barola',	'Joven',	'A',	'2017-11-04 01:07:05',	'jovenbarola@gmail.com',	'34534543',	'345345345',	'Yes',	'43535435',	'0000-00-00',	'Full Time',	'0000-00-00',	'43535',	'435435',	'Yes',	'435435',	'435435',	'435435',	'Enrolled',	'435345',	'435345',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'0000-00-00'),
+(9,	'Barola',	'Joven',	'A',	'2017-11-04 04:55:57',	'jovenbarola@gmail.com',	'',	'',	'Yes',	'Test',	'0000-00-00',	'Full Time',	'0000-00-00',	'999999999',	'999999',	'Yes',	'9999',	'',	'',	'Enrolled',	'9999999999999',	'99999999',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'',	'',	'',	'',	'0000-00-00',	'0000-00-00',	'',	'',	0,	'',	0,	'',	'Joven Barola',	'0000-00-00');
+
+-- 2018-11-12 02:45:29

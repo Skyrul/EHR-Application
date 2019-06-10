@@ -1,0 +1,30 @@
+.errorMessage {
+    color: #ff1616;
+    font-size: 0.88em;
+    padding: 1px;
+    text-shadow: 1px 1px #eae0d8;
+}
+
+legend {
+    color: #1c5faf !important;
+   	border-bottom: 1px dotted #e5e5e5 !important;
+   	font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+	.head-label {
+		font-size: 1.4em;
+	    text-align: center !important;	
+	}
+	
+	/* Stack Table */
+	.table-stack td {
+		display: block;
+	}
+	
+	.table-stack-label {
+		display: none;
+	}
+}
